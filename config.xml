@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="ca.edumedia.tamk0002.Final" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>tamk0002</name>
+    <description>
+        MAD9014 Cordova App Final Assignment 2016
+    </description>
+    <author email="tamk0002@algonquinlive.com" href="http://cordova.io">
+        Christine Tamkican
+    </author>
+    <content src="index.html" />
+    
+    <preference name="SplashScreen" value="screen"/>
+    <preference name="SplashScreenDelay" value="10000"/>
+    
+    <plugin name="cordova-plugin-whitelist" spec="1" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <platform name="android">
+        <allow-intent href="market:*" />
+        
+        <splash density="port-mdpi" src="res/screens/pMDPI.png"/>
+        <splash density="port-hdpi" src="res/screens/pHDPI.png"/>
+        <splash density="port-xhdpi" src="res/screens/pXHDPI.png"/>
+        <splash density="port-xxhdpi" src="res/screens/pXXHDPI.png"/>
+        <splash density="port-xxxhdpi" src="res/screens/pXXXHDPI.png"/>
+        <splash density="land-mdpi" src="res/screens/lsMDPI.png"/>
+        <splash density="land-hdpi" src="res/screens/lsHDPI.png"/>
+        <splash density="land-xhdpi" src="res/screens/lsXHDPI.png"/>
+        <splash density="land-xxhdpi" src="res/screens/lsXXHDPI.png"/>
+        <splash density="land-xxxhdpi" src="res/screens/lsXXXHDPI.png"/>
+        
+        <icon density="mdpi" src="res/icons/MDPI.png"/>
+        <icon density="hdpi" src="res/icons/HDPI.png"/>
+        <icon density="xhdpi" src="res/icons/XHDPI.png"/>
+        <icon density="xxhdpi" src="res/icons/XXHDPI.png"/>
+        <icon density="xxxhdpi" src="res/icons/XXXHDPI.png"/>
+        
+    </platform>
+    <platform name="ios">
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+    </platform>
+</widget>

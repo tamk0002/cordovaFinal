@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: http://griffis.edumedia.ca 'unsafe-eval';connect-src http://griffis.edumedia.ca;">
+
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" href="iconic/font/css/iconic-bootstrap.css">
+        <title>Cordova Final</title>
+    </head>
+    <body>
+     <div id="header">
+        
+      </div>
+      
+     
+       
+    <div id="gameresults" class="page active" data-role="page">
+          <header>
+                <h1>Scores</h1>
+            </header>
+            <ul class="results_list"></ul>
+      </div>
+
+        <div id="teamStandings" class="page" data-role="page">
+            <header>
+                <h1>Standings</h1>
+            </header>
+            <table>
+            <thead>
+                <tr>
+                    <th>Team</th>
+                    <th>W</th>
+                    <th>L</th>
+                    <th>T</th>
+                    <th>P</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- load the standings here after calculating them -->
+            </tbody>
+            </table>
+        </div>
+        <footer>
+            <section data-role="nav" id="nav">
+                 
+                <ul class="tabs">
+                    <li><a id="nav_home" href="#gameresults"><span aria-hidden="true" class="iconic iconic-magic-wand"> <small class="iconic-class"></small></span></a></li>
+                    <li><button class="refresh"><span aria-hidden="true" class="iconic iconic-loop-circular"> <small class="iconic-class"></small></span></button></li>
+                    <li><a id="nav_teamStandings" href="#teamStandings"><span aria-hidden="true" class="iconic iconic-medal"> <small class="iconic-class"></small></span></a></li>
+                </ul>
+            </section>
+        </footer>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+    </body>
+    
+    <div id="preload">
+        <img src="img/Gryffindor.png"/>
+        <img src="img/Hufflepuff.png"/>
+        <img src="img/Ravenclaw.png"/>
+        <img src="img/Slytherin.png"/>
+    </div>
+</html>

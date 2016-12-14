@@ -1,0 +1,155 @@
+/*Pages are not displayed*/
+
+
+*{
+    padding: 0;
+    margin: 0;
+    border-color: rgb(47, 48, 47);
+}
+.page {
+    display: none;
+    padding: 0;
+}
+
+/*Unless they are the one and only active Page*/
+
+.active {
+    display: block;
+    margin: 0 auto;
+}
+.results_list{
+    border-collapse: collapse;
+    width: 90%;
+    margin: 2rem auto;
+    padding: 0;
+}
+.results_list h3 {
+    background-color: rgb(166, 136, 48);
+    color: rgb(47, 48, 47);
+    text-align: center;
+    padding: 0.5rem;
+    line-height: 1rem;
+}
+li{
+    list-style: none;
+    text-decoration: none;
+}
+
+/*NAVIGATION*/
+
+[data-role="nav"] {
+    position: fixed;
+    z-index: 30;
+    bottom: 0;
+    width: 100%;
+    height: 4.5rem;
+    background-color: rgb(47, 48, 47);
+}
+.tabs {
+    list-style: none;
+    padding: 2%;
+}
+
+.tabs li {
+    float: left;
+    width: 33.33%;
+    height: 2rem;
+    font-size: 2rem;
+}
+
+.tabs a, .refresh {
+    display: block;
+    line-height: 2rem;
+    font-size: 2rem;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    color: rgb(166, 136, 48);
+    background-color: rgb(47, 48, 47);
+    border: 0;
+    margin-top: .5rem;
+}
+button:active,
+refreshBtn {
+    
+}
+/*END NAVIGATION*/
+/* Start 2 page display */
+/*pages are not displayed*/
+
+[data-role="page"] {
+    width: 100%;
+    min-height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    z-index: 10;
+    padding-bottom: 4rem;
+    /* to match the height of the nav bar */
+    padding-top: 1rem;
+    /* leaving space for the heading */
+    background-color: rgb(47, 48, 47);
+    color: white;
+}
+
+[data-role="page"].active {
+    display: block;
+    z-index: 10;
+}
+
+/* End 2 page display */
+
+#teamStandings {
+    border-collapse: collapse;
+}
+#teamStandings th,
+#teamStandings td {
+    text-align: center;
+    padding: 1rem 1rem;
+    background-color: white;
+    color: rgb(47, 48, 47);
+}
+#teamStandings td img {
+    width: 4rem;
+}
+table {
+    width: 90%;
+    margin: 4.5%;
+}
+#preload{
+    display: none;
+}
+div{
+    
+}
+.hteam {
+    width: 50%;
+    height: 60%;
+    display: inline-block;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.ateam {
+    width: 50%;
+    height: 60%;
+    display: inline-block;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+h1{
+    text-align: center;
+    width:auto;
+    height: auto;
+    margin-bottom: 1rem;
+}
+.hteam b {
+    float: right;
+    margin-right: 2rem;
+}
+.ateam b {
+    float: left;
+    margin-left: 2rem;
+}
